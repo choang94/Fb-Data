@@ -1,5 +1,4 @@
 #section 1: Data Cleaning
-
 fbdata = read.csv("dataset_Facebook.csv",sep = ";")
 str(fbdata)
 #convert data types
@@ -75,7 +74,7 @@ boxplot(share~Post.Month,data=fbdata,ylim = c(0,100))
 #the posts that were posted in Feb, May, July and Sep, and Oct were among
 #the ones that performed well and got the high shares. 
 
-#3. Analyze the shares of post and non-paid posts
+#3. Analyze the shares of paid post and non-paid posts
 ## table = xtabs(~share+Paid,data = fbdata)
 xtabs(share~Paid, data=fbdata)
 ## ftable(table)
@@ -111,16 +110,3 @@ t.test(p1,p2)
 #p value is 0.1487 > 0.1 => not significant. non-paid or paid don't make any
 #difference. The marketing team shouldn't put too much money on paid posts
 #and focus more on inspiration. 
-
-
-
-
-
-
-
-
-
-
-
-
-
