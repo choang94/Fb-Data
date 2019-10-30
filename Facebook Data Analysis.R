@@ -109,4 +109,4 @@ t.test(p1,p2)
 
 #p value is 0.1487 > 0.1 => not significant. non-paid or paid don't make any
 #difference. The marketing team shouldn't put too much money on paid posts
-#and focus more on inspiration. 
+#and focus more on non-paid posts by inspiration. 
